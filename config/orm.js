@@ -60,15 +60,13 @@ var orm = {
       queryString += " WHERE ";
       queryString += condition;
   
-      // console.log(queryString);
+      console.log(queryString);
   
-      // Perform the database query
       connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
         }
-  
-        // Return results in callback
+
         cb(result);
       });
     }

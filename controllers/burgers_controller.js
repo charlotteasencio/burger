@@ -23,13 +23,13 @@ router.get("/", function(req, res) {
     });
   });
 
-  router.put('/burger/:id', function(req, res) {
-    var condition = 'id = ' + req.params.id;
+  router.put("/:id", function(req, res) {
+    var condition = "id = " + req.params.id;
   
     burger.updateOne({
       devoured: true
-    }, condition, function(data) {
-      res.redirect('/');
+    }, condition, function() {
+      res.redirect("/");
     });
   });
 
