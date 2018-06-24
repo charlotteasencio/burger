@@ -1,8 +1,8 @@
 INSERT INTO burger (burger_name, devoured)
-VALUES ("bacon cheese burger", 0);
+VALUES ("bacon cheese burger", false);
 
 INSERT INTO burger (burger_name, devoured)
-VALUES("blue cheese", 1);
+VALUES("blue cheese", false);
 
 INSERT INTO burger (burger_name, devoured)
-VALUES("cheese burger", 0);
+VALUES("cheese burger", false);
